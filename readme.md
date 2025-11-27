@@ -2,7 +2,7 @@
 
 **Bachelorarbeit**: Systematische Evaluation von Retrieval-Augmented Generation (RAG) Pipelines für deutschsprachige technische Dokumentation
 
-## �berblick
+## Überblick
 
 Dieses Repository implementiert ein vollständiges RAG-System zur Beantwortung von Fragen aus technischen Dokumenten. Das System verarbeitet PDF-Dokumente, erstellt Vektorembeddings und beantwortet Fragen mithilfe eines lokalen LLMs (Llama 3.1). Der Fokus liegt auf der systematischen Evaluation verschiedener Pipeline-Konfigurationen.
 
@@ -40,7 +40,7 @@ React-basierte Chat-Oberfl�che:
 
 PostgreSQL-Schema:
 
-- `files`: Dokumentmetadaten (MIME-Type, Gr��e, Extraktionsstatus)
+- `files`: Dokumentmetadaten (MIME-Type, Größe, Extraktionsstatus)
 - `chunks`: Textchunks mit Markdown-Headern, Token-Counts, Chunk-Typen
 
 ### 5. **Automated Pipeline Evaluation** (`automated-pipeline-evaluation/`)
@@ -53,7 +53,7 @@ Automatisiertes Testing aller Pipeline-Kombinationen:
 
 ### 6. **Evaluation** (`evaluation/`)
 
-RAGAS-basierte Qualit�tsmetriken:
+RAGAS-basierte Qualitätsmetriken:
 
 - Context Precision, Faithfulness, Factual Correctness, Semantic Similarity
 - Vergleich von Pipeline-Varianten mit Ground Truth
