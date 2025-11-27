@@ -1,0 +1,26 @@
+# RAG API Dependencies
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.5.0
+httpx>=0.25.0
+
+# Vector database and embeddings
+qdrant-client>=1.9.0
+sentence-transformers>=2.7.0
+openai
+
+# Database
+psycopg2-binary>=2.9.0  # For retrieval.py
+psycopg[pool]>=3.1.0    # For LangGraph PostgresSaver (psycopg3)
+
+# LangChain for conversational agents
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-ollama>=0.2.0  # New Ollama integration
+langgraph>=0.2.0
+langgraph-checkpoint-postgres>=2.0.0
+
+# Utilities
+structlog>=23.1.0
+python-multipart>=0.0.6
+einops>=0.8.1

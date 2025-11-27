@@ -1,0 +1,186 @@
+[
+  {
+    "query_id": "q1",
+    "reference": "C wurde 1974 von Dennis M. Ritchie entwickelt."
+  },
+  {
+    "query_id": "q2",
+    "reference": "1988: Normierung durch ANSI, 'ANSI-C'."
+  },
+  {
+    "query_id": "q3",
+    "reference": "Gute Ausnutzung der Hardware, hohe Portabilität und effizienter Code."
+  },
+  {
+    "query_id": "q4",
+    "reference": "Macht Funktionen für Ein-/Ausgabe wie printf bekannt."
+  },
+  {
+    "query_id": "q5",
+    "reference": "Rückgabetyp, Funktionsname, Argumentliste, Funktionsblock, Rückgabewert."
+  },
+  {
+    "query_id": "q6",
+    "reference": "printf"
+  },
+  {
+    "query_id": "q7",
+    "reference": "Steuerzeichen für einen Zeilenumbruch (new line)."
+  },
+  {
+    "query_id": "q8",
+    "reference": "scanf benötigt die Adresse der Variablen (Adressoperator &)."
+  },
+  {
+    "query_id": "q9",
+    "reference": "Eine Gruppierung von Statements in geschweiften Klammern { }."
+  },
+  {
+    "query_id": "q10",
+    "reference": "Blockkommentar: /* ... */ , Zeilenkommentar: //."
+  },
+  {
+    "query_id": "q11",
+    "reference": "Variablen haben Speicherplätze; Konstanten haben feste Werte ohne Adresse."
+  },
+  {
+    "query_id": "q12",
+    "reference": "Integer-, Fließkomma-, Zeichen- und Stringkonstanten."
+  },
+  {
+    "query_id": "q13",
+    "reference": "Gibt die Größe eines Objekts oder Typs in Byte zurück."
+  },
+  {
+    "query_id": "q14",
+    "reference": "Ein schwächerer Typ wird in einen stärkeren Typ umgewandelt (z. B. int → double)."
+  },
+  {
+    "query_id": "q15",
+    "reference": "Es findet eine Ganzzahldivision statt."
+  },
+  {
+    "query_id": "q16",
+    "reference": "−128 bis 127."
+  },
+  {
+    "query_id": "q17",
+    "reference": "0 bis 65535."
+  },
+  {
+    "query_id": "q18",
+    "reference": "Beispiel: int tag, jahr;"
+  },
+  {
+    "query_id": "q19",
+    "reference": "<typ> <name> = <wert> (z. B. double preis = 109.99;)"
+  },
+  {
+    "query_id": "q20",
+    "reference": "Als char-Array mit abschließendem '\\0'."
+  },
+  {
+    "query_id": "q21",
+    "reference": "Zugriff auf Struktur-Elemente, z. B. x.zaehler."
+  },
+  {
+    "query_id": "q22",
+    "reference": "++x: erst erhöhen, dann Wert nutzen; x++: erst Wert nutzen, dann erhöhen."
+  },
+  {
+    "query_id": "q23",
+    "reference": "Kurzform für a = a + 2."
+  },
+  {
+    "query_id": "q24",
+    "reference": "Zugriff außerhalb des Arrays führt zu undefiniertem Verhalten."
+  },
+  {
+    "query_id": "q25",
+    "reference": "Arrays müssen elementweise kopiert werden."
+  },
+  {
+    "query_id": "q26",
+    "reference": "Mit const, z. B. const int groesse = 3;"
+  },
+  {
+    "query_id": "q27",
+    "reference": "Start bei 0, danach fortlaufend +1."
+  },
+  {
+    "query_id": "q28",
+    "reference": "Wenn Bedingung wahr ist (≠0), wird die Anweisung ausgeführt, sonst der else-Teil."
+  },
+  {
+    "query_id": "q29",
+    "reference": "Ein else gehört immer zum nächstliegenden if."
+  },
+  {
+    "query_id": "q30",
+    "reference": "switch ermöglicht Mehrfachverzweigung über konstante Werte."
+  },
+  {
+    "query_id": "q31",
+    "reference": "Fehlt break, werden weitere case-Blöcke ausgeführt."
+  },
+  {
+    "query_id": "q32",
+    "reference": "Wenn die Schleife mindestens einmal ausgeführt werden soll."
+  },
+  {
+    "query_id": "q33",
+    "reference": "Springt sofort zum nächsten Schleifendurchlauf."
+  },
+  {
+    "query_id": "q34",
+    "reference": "Initialisierung; Test; Modifikation."
+  },
+  {
+    "query_id": "q35",
+    "reference": "for(;;)"
+  },
+  {
+    "query_id": "q36",
+    "reference": "Es führt zu unübersichtlichem Code."
+  },
+  {
+    "query_id": "q37",
+    "reference": "typ name[größe]; — Index beginnt bei 0."
+  },
+  {
+    "query_id": "q38",
+    "reference": "Zugriff außerhalb der Grenze → undefiniertes Verhalten."
+  },
+  {
+    "query_id": "q39",
+    "reference": "Elementweise, z. B. in einer Schleife: b[i] = a[i];"
+  },
+  {
+    "query_id": "q40",
+    "reference": "typ name[x][y];"
+  },
+  {
+    "query_id": "q41",
+    "reference": "int a[3] = {1,2,3};"
+  },
+  {
+    "query_id": "q42",
+    "reference": "{'C'} hat Größe 1, \"C\" hat Größe 2 (wegen '\\0')."
+  },
+  {
+    "query_id": "q43",
+    "reference": "Mehrere Daten, auch unterschiedlicher Typen, werden logisch zusammengefasst."
+  },
+  {
+    "query_id": "q44",
+    "reference": "typedef struct {...} Stud;"
+  },
+  {
+    "query_id": "q45",
+    "reference": "Beispiel: eintrag1.office.nummer = 555555;"
+  },
+  {
+    "query_id": "q46",
+    "reference": "Es werden Kopien der Argumente übergeben; Änderungen wirken nicht im Hauptprogramm."
+  }
+]

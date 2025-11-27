@@ -1,0 +1,104 @@
+================================================================================
+RAGAS EVALUATION SUMMARY
+================================================================================
+
+Timestamp: 2025-11-25T20:13:18.827213
+Source: ../results/pipeline_test_results.json
+Pipelines Evaluated: 12
+Metrics Used: faithfulness, context_precision, factual_correctness, semantic_similarity
+Ground Truth: Yes
+
+================================================================================
+TOP 10 PIPELINES BY COMPOSITE SCORE
+================================================================================
+
+1. Pipeline doc_lan_nomi_den_rnk - Composite: 0.6795
+   docling + langchain + sentence-transformers + dense
+   RAGAS Scores:
+     • faithfulness: 0.7422
+     • context_precision: 0.8312
+     • factual_correctness: 0.5015
+     • semantic_similarity: 0.6430
+   Retrieval: score=0.285, time=3558ms
+
+2. Pipeline uns_nat_nomi_den - Composite: 0.6603
+   unstructured + native + sentence-transformers + dense
+   RAGAS Scores:
+     • faithfulness: 0.7462
+     • context_precision: 0.7453
+     • factual_correctness: 0.5061
+     • semantic_similarity: 0.6436
+   Retrieval: score=0.658, time=3651ms
+
+3. Pipeline doc_lan_open_den - Composite: 0.6588
+   docling + langchain + openai + dense
+   RAGAS Scores:
+     • faithfulness: 0.7623
+     • context_precision: 0.7301
+     • factual_correctness: 0.4959
+     • semantic_similarity: 0.6467
+   Retrieval: score=0.571, time=3443ms
+
+4. Pipeline doc_lan_nomi_hyb_rnk - Composite: 0.6585
+   docling + langchain + sentence-transformers + hybrid
+   RAGAS Scores:
+     • faithfulness: 0.7096
+     • context_precision: 0.8182
+     • factual_correctness: 0.4722
+     • semantic_similarity: 0.6340
+   Retrieval: score=0.262, time=3384ms
+
+5. Pipeline lla_lan_nomi_den - Composite: 0.6520
+   llamaparse + langchain + sentence-transformers + dense
+   RAGAS Scores:
+     • faithfulness: 0.7656
+     • context_precision: 0.7284
+     • factual_correctness: 0.4898
+     • semantic_similarity: 0.6244
+   Retrieval: score=0.668, time=3576ms
+
+6. Pipeline doc_cho_nomi_den - Composite: 0.6390
+   docling + chonkie + sentence-transformers + dense
+   RAGAS Scores:
+     • faithfulness: 0.7113
+     • context_precision: 0.7637
+     • factual_correctness: 0.4550
+     • semantic_similarity: 0.6259
+   Retrieval: score=0.629, time=3768ms
+
+7. Pipeline doc_sem_open_hyb - Composite: 0.6365
+   docling + semantic + openai + hybrid
+   RAGAS Scores:
+     • faithfulness: 0.6543
+     • context_precision: 0.8351
+     • factual_correctness: 0.4357
+     • semantic_similarity: 0.6210
+   Retrieval: score=0.457, time=3964ms
+
+8. Pipeline lla_sem_nomi_den_rnk - Composite: 0.6188
+   llamaparse + semantic + sentence-transformers + dense
+   RAGAS Scores:
+     • faithfulness: 0.6977
+     • context_precision: 0.7744
+     • factual_correctness: 0.3930
+     • semantic_similarity: 0.6101
+   Retrieval: score=0.140, time=4427ms
+
+9. Pipeline doc_lan_nomi_den - Composite: 0.6168
+   docling + langchain + sentence-transformers + dense
+   RAGAS Scores:
+     • faithfulness: 0.7382
+     • context_precision: 0.7029
+     • factual_correctness: 0.3983
+     • semantic_similarity: 0.6281
+   Retrieval: score=0.706, time=2734ms
+
+10. Pipeline doc_lan_nomi_hyb - Composite: 0.6096
+   docling + langchain + sentence-transformers + hybrid
+   RAGAS Scores:
+     • faithfulness: 0.6831
+     • context_precision: 0.6848
+     • factual_correctness: 0.4365
+     • semantic_similarity: 0.6339
+   Retrieval: score=0.363, time=2610ms
+

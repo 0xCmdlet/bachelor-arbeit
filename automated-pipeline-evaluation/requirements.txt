@@ -1,0 +1,5 @@
+# Root-level dependencies for pipeline testing
+# Install with: pip install -r requirements.txt
+
+# HTTP client for RAG API calls
+requests

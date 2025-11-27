@@ -1,0 +1,30 @@
+# RAG Evaluation Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core evaluation framework
+ragas
+
+# HTTP client for API calls
+httpx
+
+# Data processing
+pandas
+
+# OpenAI API (required for RAGAS metrics and test generation)
+openai
+
+# LangChain integrations
+langchain-openai
+langchain-huggingface
+langchain-core
+
+# Document processing (for test dataset generation)
+docling
+
+# Embeddings
+sentence-transformers
+
+# Additional dependencies
+python-dotenv
+
+einops

@@ -1,0 +1,236 @@
+{
+  "description": "Test queries for C programming evaluation",
+  "document": "c-programming-material.pdf",
+  "queries": [
+    {
+      "id": "q1",
+      "query": "Wann wurde die Sprache C entwickelt und von wem?",
+      "type": "factual"
+    },
+    {
+      "id": "q2",
+      "query": "Welche Normierung wurde 1988 eingeführt?",
+      "type": "factual"
+    },
+    {
+      "id": "q3",
+      "query": "Welche drei Charakteristika besitzt C?",
+      "type": "factual"
+    },
+    {
+      "id": "q4",
+      "query": "Was bewirkt #include <stdio.h>?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q5",
+      "query": "Aus welchen Teilen besteht eine Funktionsdefinition?",
+      "type": "factual"
+    },
+    {
+      "id": "q6",
+      "query": "Welche Funktion gibt Text auf dem Bildschirm aus?",
+      "type": "factual"
+    },
+    {
+      "id": "q7",
+      "query": "Was bedeutet \\n?",
+      "type": "factual"
+    },
+    {
+      "id": "q8",
+      "query": "Warum steht in scanf(\"%f\", &betrag); ein &?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q9",
+      "query": "Was ist ein Statementblock?",
+      "type": "factual"
+    },
+    {
+      "id": "q10",
+      "query": "Wie werden Kommentare in C geschrieben?",
+      "type": "procedural"
+    },
+    {
+      "id": "q11",
+      "query": "Was unterscheidet Variablen von Konstanten?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q12",
+      "query": "Welche Arten von Konstanten gibt es?",
+      "type": "factual"
+    },
+    {
+      "id": "q13",
+      "query": "Wozu dient sizeof?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q14",
+      "query": "Was ist automatische Typkonvertierung?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q15",
+      "query": "Was passiert bei int / int?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q16",
+      "query": "Welchen Wertebereich hat der Typ char?",
+      "type": "factual"
+    },
+    {
+      "id": "q17",
+      "query": "Welchen Wertebereich hat unsigned int?",
+      "type": "factual"
+    },
+    {
+      "id": "q18",
+      "query": "Wie definiert man mehrere Variablen desselben Typs?",
+      "type": "procedural"
+    },
+    {
+      "id": "q19",
+      "query": "Wie initialisiert man eine Variable?",
+      "type": "procedural"
+    },
+    {
+      "id": "q20",
+      "query": "Wie ist eine Stringkonstante im Speicher aufgebaut?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q21",
+      "query": "Was macht der Operator . ?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q22",
+      "query": "Unterschied zwischen ++x und x++?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q23",
+      "query": "Was macht a += 2?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q24",
+      "query": "Warum führt C keine Array-Grenzprüfung durch?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q25",
+      "query": "Warum geht b = a; bei Arrays nicht?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q26",
+      "query": "Wie definiert man eine symbolische Konstante?",
+      "type": "procedural"
+    },
+    {
+      "id": "q27",
+      "query": "Wie werden enum-Werte nummeriert?",
+      "type": "factual"
+    },
+    {
+      "id": "q28",
+      "query": "Wie funktioniert eine if-Anweisung?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q29",
+      "query": "Was ist das dangling-else Problem?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q30",
+      "query": "Was ist der Unterschied zwischen if und switch?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q31",
+      "query": "Was ist ein fall-through?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q32",
+      "query": "Wann benutzt man do-while?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q33",
+      "query": "Wozu dient continue?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q34",
+      "query": "Welche Teile besitzt eine for-Schleife?",
+      "type": "factual"
+    },
+    {
+      "id": "q35",
+      "query": "Wie sieht eine Endlosschleife aus?",
+      "type": "procedural"
+    },
+    {
+      "id": "q36",
+      "query": "Warum sollte goto vermieden werden?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q37",
+      "query": "Wie definiert man ein Array und mit welchem Index beginnt es?",
+      "type": "procedural"
+    },
+    {
+      "id": "q38",
+      "query": "Was passiert bei eingabe[3] wenn int eingabe[3]; definiert wurde?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q39",
+      "query": "Wie kopiert man Arrays?",
+      "type": "procedural"
+    },
+    {
+      "id": "q40",
+      "query": "Wie definiert man ein zweidimensionales Array?",
+      "type": "procedural"
+    },
+    {
+      "id": "q41",
+      "query": "Wie initialisiert man Arrays?",
+      "type": "procedural"
+    },
+    {
+      "id": "q42",
+      "query": "Unterschied zwischen {'C'} und \"C\"?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q43",
+      "query": "Was ist der Vorteil von Strukturen?",
+      "type": "conceptual"
+    },
+    {
+      "id": "q44",
+      "query": "Wie definiert man einen eigenen Strukturtyp mit typedef?",
+      "type": "procedural"
+    },
+    {
+      "id": "q45",
+      "query": "Wie greift man auf verschachtelte Strukturen zu?",
+      "type": "procedural"
+    },
+    {
+      "id": "q46",
+      "query": "Wie funktioniert Call-by-Value in C?",
+      "type": "conceptual"
+    }
+  ]
+}

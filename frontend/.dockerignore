@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+npm-debug.log
+
+# Build artifacts
+dist
+build
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+
+# Misc
+*.log
+*.env

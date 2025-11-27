@@ -1,0 +1,37 @@
+# Optimized RAG Worker Dependencies
+# Removed unused/redundant packages for faster builds
+
+# Core document processing and extraction
+docling  # Includes easyocr and tesseract support internally
+
+# Object storage
+minio
+
+# Database
+psycopg2-binary
+
+# Vector database
+qdrant-client
+
+# Machine learning and embeddings
+# torch - using version from base image (2.9.0)
+sentence-transformers
+transformers
+
+# Text processing - LangChain (only what we use)
+langchain-text-splitters==0.3.11
+langchain-experimental==0.3.4
+langchain-core==0.3.79
+langchain-huggingface
+langchain-openai
+chonkie
+
+# Embedding providers
+openai
+
+# Utilities
+structlog
+tenacity
+einops  # Required by nomic-ai/nomic-embed-text-v1.5
+unstructured-client
+llama-cloud-services
