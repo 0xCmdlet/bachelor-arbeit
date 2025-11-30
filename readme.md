@@ -6,6 +6,8 @@
 
 Dieses Repository implementiert ein vollständiges RAG-System zur Beantwortung von Fragen aus technischen Dokumenten. Das System verarbeitet PDF-Dokumente, erstellt Vektorembeddings und beantwortet Fragen mithilfe eines lokalen LLMs (Llama 3.1). Der Fokus liegt auf der systematischen Evaluation verschiedener Pipeline-Konfigurationen.
 
+**Hinweis**: Für die Bereitstellung auf Vast.ai GPU-Instanzen siehe [VAST_AI_SETUP.md](VAST_AI_SETUP.md).
+
 ## Architektur
 
 Das System besteht aus mehreren Komponenten:
@@ -21,7 +23,7 @@ Verarbeitet Dokumente mit GPU-Beschleunigung:
 
 ### 2. **RAG API** (`rag-api/`)
 
-FastAPI-Backend f�r Anfragen:
+FastAPI-Backend für Anfragen:
 
 - **Retrieval**: Dense, Hybrid (Dense + Sparse mit RRF), optional Reranking
 - **Generation**: Llama 3.1 (8B Instruct) via Ollama
@@ -30,11 +32,11 @@ FastAPI-Backend f�r Anfragen:
 
 ### 3. **Frontend** (`frontend/`)
 
-React-basierte Chat-Oberfl�che:
+React-basierte Chat-Oberfläche:
 
 - Konversationelle Schnittstelle mit Nachrichtenverlauf
 - Quellenangaben mit Relevanz-Scores
-- Konversationsverwaltung (Liste, L�schen, Fortsetzen)
+- Konversationsverwaltung (Liste, Löschen, Fortsetzen)
 
 ### 4. **Database** (`Database/`)
 
@@ -47,7 +49,7 @@ PostgreSQL-Schema:
 
 Automatisiertes Testing aller Pipeline-Kombinationen:
 
-- **56 Pipeline-Varianten** �ber 4 Dimensionen (Extraktor, Chunking, Embeddings, Retrieval)
+- **56 Pipeline-Varianten** über 4 Dimensionen (Extraktor, Chunking, Embeddings, Retrieval)
 - **46 deutsche Testfragen** zu C-Programmierung
 - Siehe [Pipeline Testing Usage](automated-pipeline-evaluation/usage.md) für Details
 
@@ -70,14 +72,14 @@ RAGAS-basierte Qualitätsmetriken:
 ### 1. System starten
 
 ```bash
-# .env konfigurieren (siehe .env f�r Optionen)
+# .env konfigurieren (siehe .env für Optionen)
 cp .env .env.local
 # Editiere .env.local nach Bedarf
 
 # Alle Services starten
 docker-compose up -d
 
-# Logs �berwachen
+# Logs überwachen
 docker-compose logs -f worker rag-api
 ```
 
@@ -105,7 +107,7 @@ cd automated-pipeline-evaluation
 # Quick-Test (13 Pipelines, ~2h)
 python validate_pipeline_dimensions.py
 
-# Vollst�ndige Evaluation (56 Pipelines, ~12-24h)
+# Vollständige Evaluation (56 Pipelines, ~12-24h)
 python run_full_evaluation.py --results-file ../results/pipeline_test_results.json
 ```
 
@@ -179,32 +181,32 @@ Beispiel: `docs_docling_langchain_nomic_hybrid_rerank`
 Konfiguration via `.env`:
 
 ```bash
-GPU_CACHE_CLEAR_BETWEEN_PHASES=true  # F�r 8GB VRAM
-RERANKER_DEVICE=cuda                  # Nur f�r 24GB VRAM
+GPU_CACHE_CLEAR_BETWEEN_PHASES=true  # Für 8GB VRAM
+RERANKER_DEVICE=cuda                  # Nur für 24GB VRAM
 ```
 
 ## Projekt-Struktur
 
 ```
 .
-ingestion-worker/      # Dokumentenverarbeitung
-rag-api/               # Query & Chat API
-frontend/              # React UI
-Database/              # PostgreSQL Schema
-automated-pipeline-evaluation/  # Pipeline Testing
-evaluation/            # RAGAS Evaluation
-config/                # Konfigurationsdateien
-results/               # Test-Ergebnisse
-docker-compose.yaml    # Service-Orchestrierung
-.env                   # Umgebungsvariablen
+├── ingestion-worker/      # Dokumentenverarbeitung
+├── rag-api/               # Query & Chat API
+├── frontend/              # React UI
+├── Database/              # PostgreSQL Schema
+├── automated-pipeline-evaluation/  # Pipeline Testing
+├── evaluation/            # RAGAS Evaluation
+├── config/                # Konfigurationsdateien
+├── results/               # Test-Ergebnisse
+├── docker-compose.yaml    # Service-Orchestrierung
+└── .env                   # Umgebungsvariablen
 ```
 
 ## Forschungsfokus
 
-Diese Bachelorarbeit untersucht den Einfluss verschiedener Pipeline-Komponenten auf die Qualit�t der RAG-Ausgabe:
+Diese Bachelorarbeit untersucht den Einfluss verschiedener Pipeline-Komponenten auf die Qualität der RAG-Ausgabe:
 
 - **Extraktoren**: OCR-Genauigkeit, Layout-Erkennung, Tabellenextraktion
-- **Chunking**: Semantische Koh�renz vs. feste Token-Grenzen
+- **Chunking**: Semantische Kohärenz vs. feste Token-Grenzen
 - **Embeddings**: Lokale Modelle vs. API-basiert
 - **Retrieval**: Dense vs. Hybrid Search, Reranking-Effekte
 
